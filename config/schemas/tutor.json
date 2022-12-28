@@ -1,0 +1,41 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"type": "object",
+	"properties": {
+		"Tutor": {
+			"$ref": "#/definitions/Tutor"
+		}
+	},
+	"required": ["Tutor"],
+	"title": "Tutor",
+	"definitions": {
+		"Tutor": {
+			"$id": "#/properties/Tutor",
+			"type": "object",
+			"title": "Tutor schema",
+			"required": ["name", "phoneNumber", "email", "username", "tutorKey", "centerKey", "qualifications", "aadhaarNo"],
+			"uniqueIndexFields": ["username"],
+			"properties": {
+				"name": { "type": "string" },
+				"phoneNumber": { "type": "string" },
+				"email": { "type": "string" },
+				"username": { "type": "string" },
+				"tutorKey": { "type": "string" },
+				"centerKey": { "type": "string" },
+				"qualifications": { "type": "string" },
+				"aadhaarNo": { "type": "string" }
+			}
+		}
+	},
+	"_osConfig": {
+		"ownershipAttributes": [
+			{
+				"email": "/email",
+				"mobile": "/phoneNumber",
+				"userId": "/username"
+			}
+		],
+		"inviteRoles": ["anonymous"],
+		"roles": ["anonymous"]
+	}
+}
