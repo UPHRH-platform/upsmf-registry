@@ -24,8 +24,8 @@
 		"ownershipAttributes": [
 			{
 				"userId": "/username",
-				"email": "/email",
-				"mobile": "/mobile"
+				"email": "/username",
+				"mobile": "/username"
 			}
 		],
 		"inviteRoles": ["anonymous"],
