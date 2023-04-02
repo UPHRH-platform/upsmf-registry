@@ -1,3 +1,5 @@
+[Postman Collection](https://api.postman.com/collections/17248210-81d16297-21ec-4100-96c2-a8375d30230f?access_key=PMAT-01GR22Q4K663YDVJ19N84NY2QA)
+
 # upsmf-registry
 
 There are 3 entities declared in the registry
